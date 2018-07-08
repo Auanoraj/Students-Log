@@ -70,12 +70,12 @@ class CreateProfile extends Component {
     e.preventDefault();
 
     const profileData = {
-      name: this.state.nam,
+      name: this.state.name,
       dateOfBirth: this.state.dateOfBirth,
       age: this.state.age,
       gender: this.state.gender,
       location: this.state.location,
-      eduaction: this.state.eduaction,
+      education: this.state.education,
       skills: this.state.skills,
       githubusername: this.state.githubusername,
       bio: this.state.bio
@@ -142,7 +142,7 @@ class CreateProfile extends Component {
                 <h6>Age: </h6>
                   <TextFieldGroup
                     placeholder="* Enter your age"
-                    name="name"
+                    name="age"
                     value={this.state.age}
                     onChange={this.onChange}
                     error={errors.age}
@@ -196,7 +196,7 @@ class CreateProfile extends Component {
                     error={errors.githubusername}
                     info="If you have a Github link, include your username"
                   />
-                <h6>Github Username: </h6>
+                <h6>Bio: </h6>
                   <TextAreaFieldGroup
                     placeholder="Short Bio"
                     name="bio"
